@@ -87,6 +87,35 @@ if __name__ == '__main__':
 						print(f'File {file_name} is saved at {save_location}')
 		time.sleep(0.5)
 		
+		
+		#Added Additional Code
+		lookup = pd.read_excel("newproject.xlsx", sheet_name="Lookup")
+		ab=[]
+		lookup =lookup.to_dict()
+		a=(list(lookup.values()))
+		b=a[0]
+		FirstName= list(b.values())
+		c=a[1]
+		LastName=list(c.values())
+		search=input("Enter FirstName:\t" )
+		
+		for x in range (0,len(FirstName)):
+    			if search==FirstName[x]:
+    					result=LastName[x]
+			
+print ("FirstName:", search)
+print("LastName:",result)
 
+			
+'''
+output: 
+gmail v1 service created successfully
+Enter your file Name:	newproject.xlsx
+File newproject.xlsx is saved at C:\python\New projects
+Enter Name:	Allu
+FirstName: Allu
+LastName: arjun
+
+'''
 
 		
