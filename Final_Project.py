@@ -88,9 +88,11 @@ if __name__ == '__main__':
 		time.sleep(0.5)
 		
 		
-		#Added Additional Code
+		#changes made
 		lookup = pd.read_excel("newproject.xlsx", sheet_name="Lookup")
 		ab=[]
+		
+		#converting to dictionary
 		lookup =lookup.to_dict()
 		a=(list(lookup.values()))
 		b=a[0]
@@ -99,6 +101,7 @@ if __name__ == '__main__':
 		LastName=list(c.values())
 		search=input("Enter FirstName:\t" )
 		
+		#applying for loop
 		for x in range (0,len(FirstName)):
     			if search==FirstName[x]:
     					result=LastName[x]
