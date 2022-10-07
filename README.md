@@ -10,14 +10,7 @@ ii. Python IDLE or Visual Studio Code
 
 iii. Client-secret.JSON File which is a type of user credientials to access the Gmail account will be downloaded from google firebase
 
-iv. Libraries:
-     a. os
-     b. base64
-     c. typing 
-     d. unicodedata 
-     e. pandas 
-     f. time
-     g. google_apis
+iv. Libraries: os, base64, typing, unicodedata, pandas, time, google_apis, pickle, datetime, collections, google_auth_oauthlib.flow, googleapiclient.discovery, gleapiclient.http, google.auth.transport.requests
 
 
 output of the program:
